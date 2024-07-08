@@ -1,0 +1,20 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/styles.scss -o css/styles.css",
+    "postcss": "postcss css/styles.css --use autoprefixer -o css/styles.prefixed.css",
+    "build-css": "node-sass sass/styles.scss css/styles.css && postcss css/styles.css --use autoprefixer -o css/styles.prefixed.css",
+    "watch-css": "node-sass -w sass/styles.scss -o css/ && postcss css/styles.css --use autoprefixer -o css/styles.prefixed.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}
