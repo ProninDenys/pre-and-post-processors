@@ -1,0 +1,128 @@
+// _profile.scss
+.profile {
+    display: flex;
+    gap: 150px; 
+    align-items: center;
+    position: relative; 
+    margin-top: 50px; 
+  }
+  .profile::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 110%;
+    width: 1px;
+    background-color: $primary-color;
+    transform: translateX(-50%);
+  }
+  .profile-image {
+    width: 430px;
+    height: 430px;
+    top: 262px;
+    left: 70px;
+    gap: 0px;
+    border: 1px solid transparent;
+    border-width: 1px 0px 0px 0px;
+  }
+  .profile-info {
+    width: 430px;
+    height: 420px;
+    top: 267px;
+    left: 670px;
+    gap: 0px;
+    border: 1px solid transparent;
+    border-width: 1px 0px 0px 0px;
+    text-align: center;
+    margin-top: -80px; 
+  }
+  .profile-info h2 {
+    font-family: $font-family-secondary;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42.19px;
+    text-align: center;
+    color: $secondary-color;
+  }
+  .info-border {
+    width: 100px;
+    height: 0px;
+    border: 1px solid $primary-color;
+    margin: 0 auto;
+    margin-top: 5px; 
+  }
+  .role {
+    font-family: $font-family-primary;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: $secondary-color;
+    margin-bottom: 10px; 
+  }
+  .social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 30px; 
+  }
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    margin-top: 5px;
+    border: none;
+  }
+  .social-icons img {
+    width: 30px; 
+    height: 30px;
+  }
+  .description {
+    font-family: $font-family-primary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    margin-top: 50px; 
+    position: relative;
+    top: -10px; 
+  }
+  .dashed-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .dashed-border div {
+    height: 4px;
+    background-color: $primary-color;
+  }
+  .dashed-border .dash-1 {
+    width: 10px;
+  }
+  .dashed-border .dash-2 {
+    width: 20px;
+  }
+  .dashed-border .dash-3 {
+    width: 10px;
+  }
+  .view-profile {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid $primary-color;
+    color: $secondary-color;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
